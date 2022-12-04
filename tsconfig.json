@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "lib": ["es2018", "DOM"],
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "esModuleInterop": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": ["./node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
+      "@adapters/*": ["app/src/adapters/*"],
+      "@config/*": ["app/src/config/*"],
+      "@domain/*": ["app/src/domain/*"],
+      "@entity/*": ["app/src/entity/*"],
+      "@errors/*": ["app/src/errors/*"],
+      "@repositories/*": ["app/src/repositories/*"],
+      "@schemas/*": ["app/src/schemas/*"],
+      "@models/*": ["app/src/models/*"],
+      "@dto/*": ["app/src/dto/*"],
+      "@use-cases/*": ["app/src/use-cases/*"],
+      "@packages/*": ["./packages/*"],
+      "@events/*": ["app/src/events/*"]
+    }
+  },
+  "exclude": ["node_modules", "cdk.out"]
+}

@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customer-account add domain event should return the domain events on the object 1`] = `
+Array [
+  Object {
+    "event": Object {
+      "created": "2022-01-01T00:00:00.000Z",
+      "firstName": "joe",
+      "id": "f39e49ad-8f88-448f-8a15-41d560ad6d70",
+      "surname": "janho",
+      "updated": "2022-01-01T00:00:00.000Z",
+    },
+    "eventDateTime": "2022-01-01T00:00:00.000Z",
+    "eventName": "CustomerAccountCreated",
+    "eventVersion": "1",
+    "source": "com.customer-account-bank",
+  },
+]
+`;
+
+exports[`customer-account create account should create the new account successfully with a valid customer 1`] = `
+CustomerAccount {
+  "_created": "2022-01-01T00:00:00.000Z",
+  "_domainEvents": Array [
+    Object {
+      "event": Object {
+        "created": "2022-01-01T00:00:00.000Z",
+        "firstName": "joe",
+        "id": "f39e49ad-8f88-448f-8a15-41d560ad6d70",
+        "surname": "janho",
+        "updated": "2022-01-01T00:00:00.000Z",
+      },
+      "eventDateTime": "2022-01-01T00:00:00.000Z",
+      "eventName": "CustomerAccountCreated",
+      "eventVersion": "1",
+      "source": "com.customer-account-bank",
+    },
+  ],
+  "_id": "f39e49ad-8f88-448f-8a15-41d560ad6d70",
+  "_updated": "2022-01-01T00:00:00.000Z",
+  "props": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "firstName": "joe",
+    "id": "f39e49ad-8f88-448f-8a15-41d560ad6d70",
+    "surname": "janho",
+    "updated": "2022-01-01T00:00:00.000Z",
+  },
+}
+`;
+
+exports[`customer-account toDomain should create a domain object based on a dto 1`] = `
+CustomerAccount {
+  "_created": "2022-01-01T00:00:00.000Z",
+  "_domainEvents": Array [],
+  "_id": "f39e49ad-8f88-448f-8a15-41d560ad6d70",
+  "_updated": "2022-01-01T00:00:00.000Z",
+  "props": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "firstName": "joe",
+    "id": "f39e49ad-8f88-448f-8a15-41d560ad6d70",
+    "surname": "janho",
+    "updated": "2022-01-01T00:00:00.000Z",
+  },
+}
+`;
+
+exports[`customer-account toDto should create the correct dto 1`] = `
+Object {
+  "created": "2022-01-01T00:00:00.000Z",
+  "firstName": "joe",
+  "id": "f39e49ad-8f88-448f-8a15-41d560ad6d70",
+  "surname": "janho",
+  "updated": "2022-01-01T00:00:00.000Z",
+}
+`;
